@@ -363,7 +363,7 @@ where
     }
 }
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Clone, Serialize, Deserialize, Debug)]
 pub struct Tokenizer(
     TokenizerImpl<
         ModelWrapper,
